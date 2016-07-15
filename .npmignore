@@ -1,0 +1,8 @@
+/scripts
+/.editorconfig
+/.jscsrc
+/.jshintrc
+.gitignore
+.npmignore
+node_modules/
+
