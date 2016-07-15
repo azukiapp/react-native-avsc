@@ -4,13 +4,13 @@ Simple JavaScript wrapper for [avsc](https://github.com/mtth/avsc) module, based
 
 ## Installation
 
-```
+```shell
 $ npm install react-native-avsc
 ```
 
 ## Usage
 
-```
+```js
 import { avro } from 'react-native-avsc';
 
 var type = avro.parse({
