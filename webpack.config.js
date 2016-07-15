@@ -8,9 +8,6 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /.*\.js$/,
-      loader: "uglify"
-    },{
       test: /\.js$/,
       loader: 'string-replace',
       query: {
@@ -21,12 +18,6 @@ module.exports = {
         ]
       }
     }],
-  },
-  'uglify-loader': {
-    compress: {
-        warnings: false
-    },
-    mangle: true,
   },
   externals: [{
     'stream': 'stream-browserify',
