@@ -14,7 +14,7 @@ module.exports = {
         // Patch
         multiple: [
            { search: "(this\\.buf\\.)utf8Write(.*?)\\);", replace: "$1write$2, 'utf8');", flags: '' },
-           { search: 'this.buf.utf8Slice', replace: 'this.buf.slice' }
+           { search: "(this\\.buf\\.)utf8Slice(.*?\\));", replace: "$1slice$2.toString('utf8');", flags: '' },
         ]
       }
     }],
